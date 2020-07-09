@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car tailwind</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="flex items-center justify-between flex-wrap bg-purple-700 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+
+            <span class="font-semibold text-xl tracking-tight">Formulario de Carro</span>
+        </div>
+    </nav>
+
+    <br>
+
+    <div class="container relative p-8 min-width border-4 border-gray-400 bg-gray-200 m-auto shadow-lg rounded-lg ">
+        <form class="w-full max-w-lg m-auto">
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                    <p > ID coche:<input class="appearance-none block w-full bg-gray-100 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" required name="Id usuario" type="number" value=""/> </p>
+                    <p > Tipo de Combustible:<input required class="appearance-none block w-full bg-gray-100 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"  name="id_mov" type="text" value=""/> </p> 
+                    <p > Tipo de Coche:<input required name="id_tip" class="appearance-none block w-full bg-gray-100 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"  type="text" value=""/> </p> 
+                    <p > Estado:<input required name="est" class="appearance-none block w-full bg-gray-100 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" type="text" value=""/> </p>     
+                    <p > Marca:<input required name="marca" class="appearance-none block w-full bg-gray-100 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" type="text" value=""/> </p> 
+                    <p>Usuario:<select class="input" class="appearance-none block w-full bg-gray-100 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" name="user">
+                        <option value="">Seleccionar...</option>
+                        <option value="1">Normal</option>
+                        <option value="2">Costeño</option>
+                    </select>
+                    <p>  Descripción 1:</p>
+                    <p><textarea required name="desc1" class="appearance-none block w-full bg-gray-100 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" type="text" rows="3" cols="40"></textarea> </p>
+                    <p>  Descripción 2:</p>
+                    <p><textarea required name="desc2" class="appearance-none block w-full bg-gray-100 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" type="text" rows="3" cols="40"></textarea> </p>
+                    <p>  Descripción 3:</p>
+                    <p><textarea required name="desc3" class="appearance-none block w-full bg-gray-100 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" type="text" rows="3" cols="40"></textarea> </p>
+                </div>
+                <div class="w-full md:w-1/2 px-3">
+                    <p > Modelo:<input class="appearance-none block w-full bg-gray-100 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" required name="model" type="text" value=""/> </p> 
+                    <p>  Año: <input class="appearance-none block w-full bg-gray-100 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" required name="ano" type="text" value=""/> </p>
+                    <p>  Detalle: <input class="appearance-none block w-full bg-gray-100 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" required name="detail" type="text" value=""/> </p>
+                    <p>  Caja: <input class="appearance-none block w-full bg-gray-100 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" required name="box" type="number" value=""/> </p>
+                    <p>  Motor: <input class="appearance-none block w-full bg-gray-100 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" required name="motor" type="number" value=""/> </p>	
+                    <p>  Fecha de Publicación: <input class="appearance-none block w-full bg-gray-100 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" required name="fecpub" type="date" value=""/> </p>
+                    <p>  Precio: <input required class="appearance-none block w-full bg-gray-100 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" name="Precio" type="number" value=""/> </p>
+                    <p>  Moneda: <input required name="coin" type="number" value=""/> </p>
+                    
+                    
+                    <p>  Descripción Destacada:</p>
+                    <p><textarea required name="descd" class="appearance-none block w-full bg-gray-100 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" type="text" rows="3" cols="40"></textarea> </p>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <input class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit"
+                value="Enviar">
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>

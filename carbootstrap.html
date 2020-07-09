@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Carbootstrap</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/materia/bootstrap.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            Carro
+        </a>
+    </nav>
+    <div class="container pt-5">
+        <div class="col-md-5" style="margin-left: 30%;">
+            <div class="card card-body">
+                <h5 class="card-title">Registrar Carro</h5>
+                <form action="" id="form">
+                    <div class="row">
+
+                        <div class="form-group">
+                            <p > Id coche:<input required name="Id usuario" type="number" value=""/> </p>
+                            <p > Tipo de Combustible:<input required name="id_mov" type="text" value=""/> </p> 
+                            <p > Tipo de Coche:<input required name="id_tip" type="text" value=""/> </p> 
+                            <p > Estado:<input required name="est" type="text" value=""/> </p>     
+                            <p > Marca:<input required name="marca" type="text" value=""/> </p> 
+                            <p>Usuario:<select class="input" name="user">
+                                <option value="1">Normal</option>
+                                <option value="2">Costeño</option>
+                            </select>
+                            <p > Modelo:<input required name="model" type="text" value=""/> </p> 
+                            <p>  Año: <input required name="ano" type="text" value=""/> </p>
+                            <p>  Detalle: <input required name="detail" type="text" value=""/> </p>
+                            <p>  Caja: <input required name="box" type="number" value=""/> </p>
+                            <p>  Motor: <input required name="motor" type="number" value=""/> </p>	
+                            <p>  Fecha de Publicación: <input required name="fecpub" type="date" value=""/> </p>
+                            <p>  Precio: <input required name="Precio" type="number" value=""/> </p>
+                            <p>  Moneda: <input required name="coin" type="number" value=""/> </p>
+                            <p>  Descripción 1:</p>
+                            <p><textarea required name="desc1" type="text" rows="2" cols="40"></textarea> </p>
+                            <p>  Descripción 2:</p>
+                            <p><textarea required name="desc2" type="text" rows="2" cols="40"></textarea> </p>
+                            <p>  Descripción 3:</p>
+                            <p><textarea required name="desc3" type="text" rows="2" cols="40"></textarea> </p>
+                            <p>  Descripción Destacada:</p>
+                            <p><textarea required name="descd" type="text" rows="2" cols="40"></textarea> </p>
+                            <input class="btn btn-outline-info" style="margin-left: 55%;" type="submit" value="Enviar">
+                        </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+</body>
+
+</html>
